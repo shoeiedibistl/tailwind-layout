@@ -1,0 +1,55 @@
+mixin reset
+  svg(
+    class=attributes.class,
+    xmlns='http://www.w3.org/2000/svg',
+    width='18',
+    height='18',
+    viewBox='0 0 48 48',
+    fill='none'
+  )
+    path(
+      d='M18.15 18.15L29.85 29.85',
+      stroke='#A5B7B3',
+      stroke-width='2',
+      stroke-linecap='round',
+      stroke-linejoin='round'
+    )
+    path(
+      d='M18.15 29.85L29.85 18.15',
+      stroke='#A5B7B3',
+      stroke-width='2',
+      stroke-linecap='round',
+      stroke-linejoin='round'
+    )
+mixin tick
+  svg(
+    width='24',
+    height='24',
+    viewBox='0 0 24 24',
+    fill='none',
+    xmlns='http://www.w3.org/2000/svg'
+  )
+    path(
+      d='M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8',
+      stroke='#62215B',
+      stroke-width='2',
+      stroke-linecap='round'
+    )
+mixin arrow-bottom
+  svg(width='28', height='28', viewBox='0 0 28 28', fill='none', xmlns='http://www.w3.org/2000/svg')
+    path(d='M16 17L11 22M11 22L6 17M11 22L11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6L22 6', stroke='#5C5772', stroke-linecap='round', stroke-linejoin='round')
+
+//- ///////////////////////////
+
+
+mixin price-card-icon 
+  svg(xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewbox='0 0 60 60' fill='none')
+    path(d='M48 57.0002H12C10.3432 57.0002 9.00001 55.6571 9 54.0002L9 6.00025C9 4.34339 10.3431 3.00025 12 3.00025L34.6893 3.00024C35.5249 3.00024 36.3228 3.34883 36.8905 3.96202L50.2013 18.3376C50.7148 18.8922 51 19.6201 51 20.3759L51 54.0002C51 55.6571 49.6569 57.0002 48 57.0002Z' stroke='#8ECCEF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+    path(d='M51 21.0002L36 21.0002C34.3431 21.0002 33 19.6571 33 18.0002L33 3.00024' stroke='#8ECCEF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+
+mixin price-card-download-icon
+  svg(xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewbox='0 0 60 60' fill='none')
+    rect(x='0.5' y='0.500244' width='59' height='59' rx='11.5' stroke='#E4E4E4')
+    path(d='M24 39.0002H36' stroke='#0B1226' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+    path(d='M30 21.0002L30 35.0002' stroke='#0B1226' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+    path(d='M35 30.0002L30 35.0002L25 30.0002' stroke='#0B1226' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')

@@ -1,0 +1,10 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'tailwind-practice-1'
+    const pageTitle = 'tailwind-practice-1'
+
+block content
+  main(data-barba='container', data-barba-namespace=pageName)
+    +tailwind-practice-1-content
