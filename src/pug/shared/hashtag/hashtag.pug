@@ -1,0 +1,5 @@
+mixin hashtag(text, notLink)
+  if notLink
+    .hashtag-label.leading-140.text-blueText(class='d:text-sm')!= text
+  else
+    a.hashtag-label.leading-140.text-blueText(class='d:text-sm')(href='#')!= text

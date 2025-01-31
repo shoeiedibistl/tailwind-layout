@@ -1,0 +1,46 @@
+mixin tailwind-practice-2-content
+  .tailwind-practice-2-content.px-60px.py-40px(class='d:px-6 s:px-4')&attributes(attributes)
+    .back-button__wrapper.w-60px.h-60px.left-60px.absolute.top-10(class='h-auto w-auto d:static')
+      a.back-button.desktop(href='#')
+        +back-small-button-icon
+      a.back-button.border-1px.border-greyBorder.mb-6.flex.w-max.items-center.gap-4.gap-4.rounded-xl.p-2.devices(
+        href='#'
+      )
+        span.back-button__icon.block.h-8.w-8.shrink-0
+          +back-small-button-devices-icon
+        span.back-button__text.text-16px.block.text-nowrap.font-semibold Назад в пресс-центр
+
+    .content.w-890px.mx-auto.flex.flex-col.gap-20(class='d:gap-24px d:w-full')
+      article.article.flex.flex-col.gap-10(class='d:gap-24px')
+        .article__header
+          +title-48('Итоги выставки EcwaTech').mb-6(class='d:mb-4')
+          .flex.flex-wrap.items-center.gap-4
+            .news-label.leading-140.rounded-xl.bg-black.px-3.py-1.text-white(
+              class='d:py-2px d:rounded-lg d:px-2 d:text-sm'
+            ) Новости
+            .date-label.leading-140.px-3.py-1(class='d:py-2px d:px-2 d:text-sm') 18 октября 2023
+            +hashtag('#выставки')
+        .article__content.text-xl(class='d:text-base')
+          p В середине сентября прошла выставка EcwaTech, которая в 17-ый раз стала международной площадкой для встречи специалистов в области коммунальной и промышленной водоподготовки, водоснабжения, водоотведения и очистки сточных вод. Мы наконец готовы рассказать и показать вам, как это было!
+          br
+          br.desktop
+          .article__picture.rounded-20px.w-full.overflow-hidden
+            +picture('fancy_img1.jpg').block.h-full.w-full
+          br
+          br.desktop
+          p Больше фотографий вы можете найти в нашем официальном сообществе ВКонтакте, где мы всегда оперативно публикуем новости компании, фото и видео с наших мероприятий.
+          br
+          p Неотъемлемой изюминкой наших стендов стало то, что мы всегда готовы вас удивлять! Ecwatech2023 не стал исключением. Впервые на территории РФ нами была представлена модель серии CDM в высокотемпературном исполнении.
+          br
+          p Помимо этого, мы презентовали установку повышения давления нового поколения, собранную на новом производстве в Подмосковье на базе насосов CDM от компании CNP в паре с автоматикой Aikon. И это еще не всё! Подробнее вы можете узнать в нашем видео.
+          br
+          p Мы благодарим всех гостей за посещение выставки и нашего стенда! До новых встреч!
+
+    .more-news.mt-120px.border-t-1px.border-greyBorder.pt-5(class='d:mt-12 d:pt-3')
+      +title-32('Похожие новости').mb-10(class='d:mb-6')
+      .more-news__cards.gap-24px.grid.grid-cols-3(
+        class='d:mx-negative-24px s:mx-negative-16px d:flex d:w-screen d:gap-4 d:overflow-auto d:px-6 s:px-4'
+      )
+        +news-card('Итоги выставки EcwaTech')
+        +news-card('Кавитация и NPSHr, расчет максимальной высоты подъёма')
+        +news-card('Насосы серии NIS вошли в складскую программу CNP')

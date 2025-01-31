@@ -1,0 +1,14 @@
+.tailwind-practice-2-content {
+  position: relative;
+
+  .article {
+    picture {
+      aspect-ratio: 890 / 594;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
