@@ -1,0 +1,13 @@
+mixin price-card(text)
+  a.price-card.rounded-20px.border-greyBorder.border-1px.h-200px.p-24px.flex.flex-col.justify-between.gap-5(href='#', download='')(
+    class='gap-6 d:h-full d:rounded-2xl d:p-4'
+  )&attributes(attributes)
+    .price-card__top.flex.justify-between.gap-5
+      .price-card__info.flex.gap-3
+        .price-card__icon.shrink-0(class='d:h-10 d:w-10')
+          +price-card-icon
+        .price-card__weight.text-greyText.leading-140(class='d:text-sm') 1,55 МБ
+      .price-card__download-icon.shrink-0(class='d:h-10 d:w-10')
+        +price-card-download-icon
+    .price-card__bottom
+      .price-card__text.leading-140.text-xl.font-semibold(class='d:leading-120 d:text-sm')!= text
