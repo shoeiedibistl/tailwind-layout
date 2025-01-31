@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 export const commonFunction = () => {
   // libs config
   config()
-  cssDebug(true)
+  cssDebug(false)
   initSlideFunction()
 
   // libs
