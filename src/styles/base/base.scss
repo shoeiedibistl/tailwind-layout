@@ -1,0 +1,29 @@
+a {
+  color: #0b1226;
+}
+
+body {
+  font-family: TTFirsNeue;
+  font-size: rem(16px);
+  color: #0b1226;
+
+  &.overflow-scroll {
+    overflow: hidden;
+  }
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+.test {
+  border: 1px solid red !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

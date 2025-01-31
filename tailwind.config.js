@@ -10,10 +10,60 @@ export default {
       transitionDuration: {
         DEFAULT: '0.5s'
       },
-      colors: {
-        dark: '#0c0c0c',
-        light: '#f2f2f2'
+      fontSize: {
+        '90px': '5.625rem',
+        '60px': '3.75rem',
+        '32px': '2rem',
+        '20px': '1.25rem'
+      },
+      spacing: {
+        '60px': '3.75rem',
+        '40px': '2.5rem'
+      },
+      lineHeight: {
+        140: '1.4',
+        120: '1.2'
+      },
+      borderRadius: {
+        '20px': '1.25rem'
+      },
+      borderWidth: {
+        '1px': '1px'
+      },
+      height: {
+        '740px': '46.25rem',
+        '594px': '37.5rem',
+        '351px': '22.5rem',
+        '200px': '12.5rem',
+        '60px': '3.75rem',
+        '40px': '2.5rem'
+      },
+      width: {
+        '890px': '56.25rem',
+        '253px': '16.1875rem',
+        '200px': '12.5rem',
+        '60px': '3.75rem',
+        '40px': '2.5rem'
+      },
+      padding: {
+        '2px': '0.125rem',
+        '24px': '1.5rem'
+      },
+      margin: {
+        '120px': '7.5rem',
+        'negative-24px': '-1.5rem',
+        'negative-16px': '-1rem'
+      },
+      gap: {
+        '24px': '1.5rem'
       }
+    },
+    colors: {
+      white: '#FFFFFF',
+      black: '#0B1226',
+      greyBorder: '#E4E4E4',
+      greyText: '#747884',
+      blueText: '#0070B8'
     },
     screens: {
       desktop: { min: '1201px' },
